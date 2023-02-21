@@ -3,13 +3,14 @@
   b = [3, 4]
   puts "kjvkdbhhrbowhb #{a+b}"
 =end
+txt = 'In my country we put our name first when we write it or when we say it, but in some official documents we have our names written at the end and the last-name first.'
 
 
-str = 'In my country we put our name first when we write it or when we say it, but in some official documents we have our names written at the end and the last-name first.'.chars
+str = txt.chars
 puts str.count('a')
 
 
-str = 'In my country we put our name first when we write it or when we say it, but in some official documents we have our names written at the end and the last-name first.'.split
+str = txt.split
 p str.select{ |i| str.count(i) > 1 }.uniq
 
 
@@ -18,5 +19,5 @@ str.each{ |i| are << i.capitalize }
 p are.join(' ')
 
 
-p str = 'In my country we put our name first when we write it or when we say it, but in some official documents we have our names written at the end and the last-name first.'.split(",")
+p str = txt.split(",")
 p str.join('...') 

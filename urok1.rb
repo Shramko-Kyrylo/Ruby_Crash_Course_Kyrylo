@@ -9,7 +9,7 @@ str = txt.chars
 puts str.count('a')
 
 
-str = txt.split
+str = txt.downcase.split
 p str.select{ |i| str.count(i) > 1 }.uniq
 
 
